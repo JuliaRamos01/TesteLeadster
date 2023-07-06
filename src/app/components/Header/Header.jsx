@@ -1,11 +1,16 @@
 import Image from "next/image";
 import * as S from "./HeaderStyle";
-import Logo from "../../../../public/images/logo.png"
+import AssetHeader from "../../../../public/images/asset-header.png";
 
-export default function Header (){
+export default function Header(){
     return(
         <S.HeaderMain>
-            <Image src={Logo} alt="Logo"/>
+            <S.HeaderBox>
+            <S.Button>Webnars exclusivos</S.Button>
+            <h3>Menos conversinha,</h3>
+            <S.H1>Mais conversão <Image src={AssetHeader} alt="Asset"/> </S.H1>
+            <p>Conheça as estratégias que mudaram o jogo e como aplicá-las no seu negócio</p>
+            </S.HeaderBox>
         </S.HeaderMain>
     )
 }
